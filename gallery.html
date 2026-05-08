@@ -20,10 +20,13 @@
   <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
     <div class="container nav-inner">
-   <a href="index.html" class="nav-logo">
-  <img src="images/logo.jpeg" alt="Dardic Resort Gurez" 
-    style="height:52px; width:auto; object-fit:contain;" />
-</a>
+      <a href="index.html" class="nav-logo-wrap">
+        <img src="images/logo.jpeg" alt="Dardic Resort Gurez Logo" />
+        <div class="nav-logo-text">
+          <span class="logo-main">Dardic Resort</span>
+          <span class="logo-sub">Gurez Valley · Kashmir</span>
+        </div>
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -72,7 +75,7 @@
 
         <!-- Exterior -->
 <div class="gallery-masonry-item" data-cat="exterior" data-lightbox data-caption="Dardic Resort — Main Entrance">
-  <img src="images/outside_huts_2.jpg" alt="Resort Exterior" loading="lazy" />
+  <img src="images/outside_huts_2.jpeg" alt="Resort Exterior" loading="lazy" />
   <div class="gallery-masonry-overlay">
     <i class="fa-solid fa-magnifying-glass-plus"></i>
     <span>Resort Exterior</span>
@@ -105,7 +108,7 @@
 
         <!-- Views -->
 <div class="gallery-masonry-item" data-cat="views" data-lightbox data-caption="Habba Khatoon Peak at Sunrise">
-  <img src="images/view_from_window.jpg" alt="Mountain View" loading="lazy" />
+  <img src="images/view_from_window.jpeg" alt="Mountain View" loading="lazy" />
   <div class="gallery-masonry-overlay">
     <i class="fa-solid fa-magnifying-glass-plus"></i>
     <span>Mountain Views</span>
@@ -126,7 +129,7 @@
 
         <!-- Exterior 2 -->
    <div class="gallery-masonry-item" data-cat="exterior" data-lightbox data-caption="Resort Outdoor Area">
-  <img src="images/view_outside_huts.jpg" alt="Resort Exterior" loading="lazy" />
+  <img src="images/view_outside_huts.jpeg" alt="Resort Exterior" loading="lazy" />
   <div class="gallery-masonry-overlay">
     <i class="fa-solid fa-magnifying-glass-plus"></i>
     <span>Resort Exterior</span>
@@ -207,7 +210,7 @@
 
         <!-- Rooms 3 -->
 <div class="gallery-masonry-item" data-cat="rooms" data-lightbox data-caption="Attached Washroom — Premium Finish">
-  <img src="images/washroom_1.jpg" alt="Attached Washroom" loading="lazy" />
+  <img src="images/washroom_1.jpeg" alt="Attached Washroom" loading="lazy" />
   <div class="gallery-masonry-overlay">
     <i class="fa-solid fa-magnifying-glass-plus"></i>
     <span>Washroom</span>
@@ -238,13 +241,6 @@
           </div>
         </div>
 
-      </div><!-- /gallery-masonry -->
-
-      <!-- Upload note -->
-      <div style="text-align:center;margin-top:48px;padding:32px;background:var(--beige);border-radius:var(--radius);" data-aos="fade-up">
-        <i class="fa-solid fa-camera" style="font-size:2.5rem;color:var(--gold);margin-bottom:12px;display:block;"></i>
-        <h4 style="color:var(--forest);margin-bottom:8px;">Add Your Resort Photos</h4>
-        <p style="max-width:480px;margin:0 auto;font-size:.85rem;">Replace the placeholder cards above with actual resort images by placing them in the <code>images/</code> folder and adding <code>&lt;img&gt;</code> tags inside each gallery item.</p>
       </div>
 
     </div>
@@ -269,9 +265,15 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-     <div class="footer-brand">
-  <img src="images/logo.jpeg" alt="Dardic Resort Gurez"
-    style="height:64px; width:auto; object-fit:contain; margin-bottom:14px;" />
+        <div class="footer-brand">
+  <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+    <img src="images/logo.jpeg" alt="Dardic Resort Gurez"
+      style="height:54px; width:54px; border-radius:50%; object-fit:cover; border:2px solid var(--gold);" />
+    <div>
+      <span class="logo-main" style="display:block; color:var(--white);">Dardic Resort</span>
+      <span class="logo-sub" style="display:block;">Gurez Valley · Kashmir</span>
+    </div>
+  </div>
           <p>Nestled on the serene banks of the Kishanganga River, Dardic Resort Gurez offers a premium escape into the untouched beauty of Gurez Valley, Kashmir.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/share/1GrpZMFwcp/" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>

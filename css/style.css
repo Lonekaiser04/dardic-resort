@@ -40,7 +40,41 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
-
+    /* Navbar logo circle + text */
+    .nav-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-wrap img {
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      flex-shrink: 0;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .nav-logo-wrap img:hover {
+      box-shadow: 0 0 0 3px var(--gold), 0 0 16px rgba(200,169,107,0.35);
+      transform: scale(1.05);
+    }
+    .nav-logo-text .logo-main {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+    }
+    .nav-logo-text .logo-sub {
+      display: block;
+      font-size: 0.58rem;
+      color: var(--gold);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
 img { max-width: 100%; display: block; }
 a  { text-decoration: none; color: inherit; }
 ul { list-style: none; }
@@ -1195,24 +1229,6 @@ p  { color: var(--gray); font-size: .96rem; }
 }
 .mission-icon i { font-size: 1.6rem; color: var(--gold); }
 .mission-card h3 { font-size: 1.2rem; margin-bottom: 12px; }
-
-.about-stats { background: var(--forest); padding: 60px 0; }
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  text-align: center;
-}
-.stat-item .num {
-  font-family: var(--font-head);
-  font-size: 3rem;
-  color: var(--gold);
-  font-weight: 700;
-  display: block;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-.stat-item .lbl { color: rgba(245,230,211,.7); font-size: .82rem; letter-spacing: .08em; }
 
 .team-section { background: var(--white); }
 .team-grid {

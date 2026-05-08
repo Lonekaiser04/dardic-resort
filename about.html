@@ -20,10 +20,13 @@
   <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
     <div class="container nav-inner">
-   <a href="index.html" class="nav-logo">
-  <img src="images/logo.jpeg" alt="Dardic Resort Gurez" 
-    style="height:52px; width:auto; object-fit:contain;" />
-</a>
+      <a href="index.html" class="nav-logo-wrap">
+        <img src="images/logo.jpeg" alt="Dardic Resort Gurez Logo" />
+        <div class="nav-logo-text">
+          <span class="logo-main">Dardic Resort</span>
+          <span class="logo-sub">Gurez Valley · Kashmir</span>
+        </div>
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -60,7 +63,7 @@
       <!-- Story Block 1 -->
       <div class="about-story-grid" data-aos="fade-up">
  <div class="about-story-img">
-  <img src="images/view_from_huts.jpg" alt="View from Dardic Resort" loading="lazy"
+  <img src="images/view_from_huts.jpeg" alt="View from Dardic Resort" loading="lazy"
     style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);" />
 </div>
         <div style="display:flex;flex-direction:column;justify-content:center;gap:16px;">
@@ -78,7 +81,7 @@
       <!-- Story Block 2 -->
       <div class="about-story-grid reverse" data-aos="fade-up">
   <div class="about-story-img">
-  <img src="images/kishanganga_view_from_window_c.jpg" alt="Kishanganga River" loading="lazy"
+  <img src="images/kishanganga_view_from_window_c.jpeg" alt="Kishanganga River" loading="lazy"
     style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);" />
 </div>
         <div style="display:flex;flex-direction:column;justify-content:center;gap:16px;">
@@ -90,31 +93,6 @@
         </div>
       </div>
 
-    </div>
-  </section>
-
-
-  <!-- STATS -->
-  <section class="about-stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
-          <span class="num count-up" data-target="500" data-suffix="+">0+</span>
-          <span class="lbl">Happy Guests Hosted</span>
-        </div>
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-          <span class="num count-up" data-target="5" data-suffix="★">0★</span>
-          <span class="lbl">Average Guest Rating</span>
-        </div>
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-          <span class="num count-up" data-target="4" data-suffix="">0</span>
-          <span class="lbl">Premium Room Types</span>
-        </div>
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-          <span class="num count-up" data-target="365" data-suffix="">0</span>
-          <span class="lbl">Days of Natural Beauty</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -259,9 +237,15 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-      <div class="footer-brand">
-  <img src="images/logo.jpeg" alt="Dardic Resort Gurez"
-    style="height:64px; width:auto; object-fit:contain; margin-bottom:14px;" />
+       <div class="footer-brand">
+  <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+    <img src="images/logo.jpeg" alt="Dardic Resort Gurez"
+      style="height:54px; width:54px; border-radius:50%; object-fit:cover; border:2px solid var(--gold);" />
+    <div>
+      <span class="logo-main" style="display:block; color:var(--white);">Dardic Resort</span>
+      <span class="logo-sub" style="display:block;">Gurez Valley · Kashmir</span>
+    </div>
+  </div>
           <p>Nestled on the serene banks of the Kishanganga River, Dardic Resort Gurez offers a premium escape into the untouched beauty of Gurez Valley, Kashmir.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/share/1GrpZMFwcp/" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
