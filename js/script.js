@@ -11,51 +11,76 @@
   const navbar    = document.querySelector('.navbar');
   const hamburger = document.querySelector('.hamburger');
   const navLinks  = document.querySelector('.nav-links');
-  const allLinks  = document.querySelectorAll('.nav-links a:not(.btn-book)');
+  const allLinks  = document.querySelectorAll('.nav-links a');
 
-  // Scroll → add/remove scrolled class
+  if (!navbar) return;
+
+  // Inner pages always stay scrolled (dark navbar)
+  const isHomePage = !!document.querySelector('.hero');
+
+  // Scroll handler
   function onScroll() {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
-    // Back-to-top
+    if (isHomePage) {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    } else {
+      navbar.classList.add('scrolled'); // Always dark on inner pages
+    }
+    // Back-to-top button
     const topBtn = document.querySelector('.float-top');
     if (topBtn) topBtn.classList.toggle('visible', window.scrollY > 400);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  onScroll(); // Run once on load
 
-  // Hamburger toggle
+  // ── Hamburger toggle ──
+  function openMenu() {
+    navLinks.classList.add('open');
+    hamburger.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    navLinks.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
   if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      hamburger.classList.toggle('open', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      navLinks.classList.contains('open') ? closeMenu() : openMenu();
     });
 
-    // Close on link click
+    // Close when any nav link is clicked
     allLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', () => closeMenu());
     });
 
-    // Close on backdrop click
-    navLinks.addEventListener('click', (e) => {
-      if (e.target === navLinks) {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('open');
-        document.body.style.overflow = '';
+    // Close when clicking outside the menu
+    document.addEventListener('click', (e) => {
+      if (
+        navLinks.classList.contains('open') &&
+        !navLinks.contains(e.target) &&
+        !hamburger.contains(e.target)
+      ) {
+        closeMenu();
       }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
     });
   }
 
-  // Active nav link highlighting
+  // ── Active nav link ──
   function setActiveLink() {
     const path = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-links a').forEach(link => {
       const href = link.getAttribute('href');
-      link.classList.toggle('active', href === path || (path === '' && href === 'index.html'));
+      link.classList.toggle('active',
+        href === path || (path === '' && href === 'index.html')
+      );
     });
   }
   setActiveLink();
