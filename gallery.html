@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Dardic Resort Gurez | Gurez Valley Visual Stories</title>
+  <meta name="description" content="Explore the stunning photo gallery of Dardic Resort Gurez — resort exteriors, room interiors, Kishanganga River, Habba Khatoon Peak, bonfires, and Gurez Valley landscapes." />
+  <meta name="keywords" content="Dardic Resort gallery, Gurez Valley photos, Kishanganga River pictures, Habba Khatoon Peak images, resort photos Kashmir" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+<link rel="apple-touch-icon" href="images/logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-inner">
+   <a href="index.html" class="nav-logo">
+  <img src="images/logo.jpeg" alt="Dardic Resort Gurez" 
+    style="height:52px; width:auto; object-fit:contain;" />
+</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://wa.me/917889309910" target="_blank" rel="noopener" class="btn-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="section-label" data-aos="fade-up"><i class="fa-solid fa-images"></i> &nbsp; Visual Stories</span>
+      <h1 data-aos="fade-up" data-aos-delay="80">A Glimpse of Gurez</h1>
+      <p data-aos="fade-up" data-aos-delay="160">Every frame tells a story of untouched wilderness, warm hospitality, and breathtaking Himalayan grandeur.</p>
+      <div class="breadcrumb" data-aos="fade-up" data-aos-delay="240">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery-full section">
+    <div class="container">
+
+      <!-- Filter buttons -->
+      <div class="gallery-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="exterior">Resort Exterior</button>
+        <button class="filter-btn" data-filter="rooms">Room Interiors</button>
+        <button class="filter-btn" data-filter="nature">Nature &amp; River</button>
+        <button class="filter-btn" data-filter="activities">Activities</button>
+        <button class="filter-btn" data-filter="views">Mountain Views</button>
+      </div>
+
+      <!-- Masonry Gallery -->
+      <div class="gallery-masonry" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Exterior -->
+<div class="gallery-masonry-item" data-cat="exterior" data-lightbox data-caption="Dardic Resort — Main Entrance">
+  <img src="images/outside_huts_2.jpg" alt="Resort Exterior" loading="lazy" />
+  <div class="gallery-masonry-overlay">
+    <i class="fa-solid fa-magnifying-glass-plus"></i>
+    <span>Resort Exterior</span>
+  </div>
+</div>
+
+        <!-- Nature -->
+        <div class="gallery-masonry-item" data-cat="nature" data-lightbox data-caption="Kishanganga River at Dawn">
+          <div class="gal-placeholder" style="padding:60px 20px;background:linear-gradient(135deg,#1a3a4a,#2d5a6b);">
+            <i class="fa-solid fa-water"></i>
+            <span>Kishanganga River at Dawn</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Kishanganga River</span>
+          </div>
+        </div>
+
+        <!-- Rooms -->
+        <div class="gallery-masonry-item" data-cat="rooms" data-lightbox data-caption="Deluxe Double Room Interior">
+          <div class="gal-placeholder" style="padding:70px 20px;background:linear-gradient(135deg,#2d3a1a,#4a6b2d);">
+            <i class="fa-solid fa-bed"></i>
+            <span>Deluxe Double Room Interior</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Room Interior</span>
+          </div>
+        </div>
+
+        <!-- Views -->
+<div class="gallery-masonry-item" data-cat="views" data-lightbox data-caption="Habba Khatoon Peak at Sunrise">
+  <img src="images/view_from_window.jpg" alt="Mountain View" loading="lazy" />
+  <div class="gallery-masonry-overlay">
+    <i class="fa-solid fa-magnifying-glass-plus"></i>
+    <span>Mountain Views</span>
+  </div>
+</div>
+
+        <!-- Activities -->
+        <div class="gallery-masonry-item" data-cat="activities" data-lightbox data-caption="Evening Bonfire by the River">
+          <div class="gal-placeholder" style="padding:65px 20px;background:linear-gradient(135deg,#3a1a1a,#6b2d2d);">
+            <i class="fa-solid fa-fire"></i>
+            <span>Evening Bonfire by the River</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Bonfire Evening</span>
+          </div>
+        </div>
+
+        <!-- Exterior 2 -->
+   <div class="gallery-masonry-item" data-cat="exterior" data-lightbox data-caption="Resort Outdoor Area">
+  <img src="images/view_outside_huts.jpg" alt="Resort Exterior" loading="lazy" />
+  <div class="gallery-masonry-overlay">
+    <i class="fa-solid fa-magnifying-glass-plus"></i>
+    <span>Resort Exterior</span>
+  </div>
+</div>
+
+        <!-- Nature 2 -->
+        <div class="gallery-masonry-item" data-cat="nature" data-lightbox data-caption="Gurez Valley — Morning Mist">
+          <div class="gal-placeholder" style="padding:75px 20px;background:linear-gradient(135deg,#2d3a2d,#4a6b4a);">
+            <i class="fa-solid fa-cloud"></i>
+            <span>Gurez Valley — Morning Mist</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Valley Mist</span>
+          </div>
+        </div>
+
+        <!-- Rooms 2 -->
+        <div class="gallery-masonry-item" data-cat="rooms" data-lightbox data-caption="Mountain View Suite — Window View">
+          <div class="gal-placeholder" style="padding:60px 20px;background:linear-gradient(135deg,#1a2d1a,#2d4a2d);">
+            <i class="fa-solid fa-door-open"></i>
+            <span>Mountain View Suite Interior</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Suite Interior</span>
+          </div>
+        </div>
+
+        <!-- Activities 2 -->
+        <div class="gallery-masonry-item" data-cat="activities" data-lightbox data-caption="Trekking in Gurez Valley">
+          <div class="gal-placeholder" style="padding:90px 20px;background:linear-gradient(135deg,#1a3a1a,#2d6b2d);">
+            <i class="fa-solid fa-person-hiking"></i>
+            <span>Trekking in Gurez Valley</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Trekking</span>
+          </div>
+        </div>
+
+        <!-- Views 2 -->
+        <div class="gallery-masonry-item" data-cat="views" data-lightbox data-caption="Panoramic Gurez Valley Vista">
+          <div class="gal-placeholder" style="padding:70px 20px;background:linear-gradient(135deg,#2d2d1a,#6b6b2d);">
+            <i class="fa-solid fa-panorama"></i>
+            <span>Panoramic Gurez Valley Vista</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Valley Panorama</span>
+          </div>
+        </div>
+
+        <!-- Nature 3 -->
+        <div class="gallery-masonry-item" data-cat="nature" data-lightbox data-caption="Alpine Lake near Gurez">
+          <div class="gal-placeholder" style="padding:80px 20px;background:linear-gradient(135deg,#1a2d3a,#2d4a5a);">
+            <i class="fa-solid fa-droplet"></i>
+            <span>Alpine Lake near Gurez</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Alpine Lake</span>
+          </div>
+        </div>
+
+        <!-- Exterior 3 -->
+        <div class="gallery-masonry-item" data-cat="exterior" data-lightbox data-caption="Resort — Night Lights View">
+          <div class="gal-placeholder" style="padding:65px 20px;background:linear-gradient(135deg,#0a1a12,#163a2d);">
+            <i class="fa-solid fa-moon"></i>
+            <span>Resort at Night</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Night View</span>
+          </div>
+        </div>
+
+        <!-- Rooms 3 -->
+<div class="gallery-masonry-item" data-cat="rooms" data-lightbox data-caption="Attached Washroom — Premium Finish">
+  <img src="images/washroom_1.jpg" alt="Attached Washroom" loading="lazy" />
+  <div class="gallery-masonry-overlay">
+    <i class="fa-solid fa-magnifying-glass-plus"></i>
+    <span>Washroom</span>
+  </div>
+</div>
+
+        <!-- Activities 3 -->
+        <div class="gallery-masonry-item" data-cat="activities" data-lightbox data-caption="Riverside Relaxation Spot">
+          <div class="gal-placeholder" style="padding:85px 20px;background:linear-gradient(135deg,#1a3a2d,#2d6b4a);">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <span>Riverside Relaxation</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Riverside Relaxation</span>
+          </div>
+        </div>
+
+        <!-- Views 3 -->
+        <div class="gallery-masonry-item" data-cat="views" data-lightbox data-caption="Star Gazing from the Resort">
+          <div class="gal-placeholder" style="padding:95px 20px;background:linear-gradient(135deg,#050a10,#0a1a2d);">
+            <i class="fa-solid fa-star"></i>
+            <span>Starry Night Sky — Gurez</span>
+          </div>
+          <div class="gallery-masonry-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <span>Starry Skies</span>
+          </div>
+        </div>
+
+      </div><!-- /gallery-masonry -->
+
+      <!-- Upload note -->
+      <div style="text-align:center;margin-top:48px;padding:32px;background:var(--beige);border-radius:var(--radius);" data-aos="fade-up">
+        <i class="fa-solid fa-camera" style="font-size:2.5rem;color:var(--gold);margin-bottom:12px;display:block;"></i>
+        <h4 style="color:var(--forest);margin-bottom:8px;">Add Your Resort Photos</h4>
+        <p style="max-width:480px;margin:0 auto;font-size:.85rem;">Replace the placeholder cards above with actual resort images by placing them in the <code>images/</code> folder and adding <code>&lt;img&gt;</code> tags inside each gallery item.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" data-aos="fade-up">
+      <span class="section-label"><i class="fa-solid fa-camera"></i> &nbsp; Experience It Yourself</span>
+      <h2>These Photos Are Just<br />the Beginning</h2>
+      <p>The real beauty of Gurez Valley and Dardic Resort can only be felt in person. Come, stay, and create your own story.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/917889309910" target="_blank" rel="noopener" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Book via WhatsApp</a>
+        <a href="rooms.html" class="btn btn-primary"><i class="fa-solid fa-bed"></i> View Rooms</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+     <div class="footer-brand">
+  <img src="images/logo.jpeg" alt="Dardic Resort Gurez"
+    style="height:64px; width:auto; object-fit:contain; margin-bottom:14px;" />
+          <p>Nestled on the serene banks of the Kishanganga River, Dardic Resort Gurez offers a premium escape into the untouched beauty of Gurez Valley, Kashmir.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1GrpZMFwcp/" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dardic_resort?igsh=MWg5M3JqOHR1b3YxeA==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/917889309910" target="_blank" rel="noopener" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="#">Habba Khatoon Peak</a></li>
+            <li><a href="#">Kishanganga River</a></li>
+            <li><a href="#">Trekking Routes</a></li>
+            <li><a href="#">Silk Route History</a></li>
+            <li><a href="#">Scenic Lakes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>Markoot Gurez, Bandipora, J&amp;K</span></div>
+          <div class="contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+917889309910">+91 7889309910</a></div>
+          <div class="contact-item"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/917889309910" target="_blank" rel="noopener">+91 7889309910</a></div>
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:dardicresort@gmail.com">dardicresort@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dardic Resort Gurez. All rights reserved.</p>
+        <p>Designed by <a href="https://kaisermohiuddin.me" target="_blank" rel="noopener noreferrer">Kaiser Mohiuddin</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="float-btns">
+    <div class="float-btn-wrap">
+      <button class="float-btn float-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+      <span class="float-tooltip">Back to top</span>
+    </div>
+    <div class="float-btn-wrap">
+      <a href="tel:+917889309910" class="float-btn float-call"><i class="fa-solid fa-phone"></i></a>
+      <span class="float-tooltip">Call Us</span>
+    </div>
+    <div class="float-btn-wrap">
+      <a href="https://wa.me/917889309910" target="_blank" rel="noopener" class="float-btn float-wa"><i class="fa-brands fa-whatsapp"></i></a>
+      <span class="float-tooltip">WhatsApp</span>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+    <img class="lightbox-img" src="" alt="Gallery" />
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 700, once: true, offset: 60 });</script>
+  <script src="js/script.js"></script>
+
+  <style>
+    /* Lightbox for placeholder items — show caption as image */
+    .lightbox-img[src=""] { display: none; }
+  </style>
+
+  <script>
+    // For placeholder gallery items (no real src), open lightbox with a styled div instead
+    document.querySelectorAll('[data-lightbox]').forEach(item => {
+      item.addEventListener('click', () => {
+        const caption = item.dataset.caption || 'Dardic Resort Gurez';
+        const lb = document.getElementById('lightbox');
+        const lbImg = lb.querySelector('.lightbox-img');
+        const lbCap = lb.querySelector('.lightbox-caption');
+        // Use placeholder gradient as background
+        const style = getComputedStyle(item).background;
+        lbImg.style.display = 'none';
+        let existing = lb.querySelector('.lb-placeholder');
+        if (existing) existing.remove();
+        const placeholder = document.createElement('div');
+        placeholder.className = 'lb-placeholder';
+        placeholder.style.cssText = `width:60vw;max-width:600px;height:400px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:rgba(255,255,255,.6);font-size:1rem;background:${style};`;
+        placeholder.innerHTML = `<i class="fa-solid fa-image" style="font-size:4rem;color:rgba(200,169,107,.7);"></i><span style="font-size:.9rem;letter-spacing:.08em;">${caption}</span><span style="font-size:.75rem;opacity:.5;">Image coming soon — add to images/ folder</span>`;
+        lb.insertBefore(placeholder, lbCap);
+        lbCap.textContent = caption;
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    document.querySelector('.lightbox-close').addEventListener('click', () => {
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+      const ph = lb.querySelector('.lb-placeholder');
+      if (ph) ph.remove();
+    });
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.classList.remove('open');
+        document.body.style.overflow = '';
+        const ph = this.querySelector('.lb-placeholder');
+        if (ph) ph.remove();
+      }
+    });
+  </script>
+</body>
+</html>
